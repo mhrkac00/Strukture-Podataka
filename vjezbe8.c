@@ -239,9 +239,8 @@ int TreeDepth(Position current)
 		return 0;
 	else {
 		LeftH = TreeDepth(current->left);
-		RightH = LeftH = TreeDepth(current->left);
-		(current->right);
-
+		RightH = TreeDepth(current->left);
+		
 		if (LeftH > RightH)
 			return (LeftH + 1);
 		else
